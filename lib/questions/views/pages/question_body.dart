@@ -72,7 +72,7 @@ class _QuestionState extends State<Question> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       TextButton(
-                          style: ButtonStyle(
+                          style: const ButtonStyle(
                               backgroundColor:
                                   MaterialStatePropertyAll(Colors.green),
                               foregroundColor:
@@ -86,16 +86,16 @@ class _QuestionState extends State<Question> {
                                 'true',
                                 state.questions[index].correctAnswer);
                           },
-                          child: Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: const Text(
+                          child: const Padding(
+                            padding:  EdgeInsets.all(10),
+                            child:  Text(
                               "True",
                               style:
                                   TextStyle(color: Colors.black, fontSize: 30),
                             ),
                           )),
                       TextButton(
-                          style: ButtonStyle(
+                          style: const ButtonStyle(
                               backgroundColor:
                                   MaterialStatePropertyAll(Colors.red),
                               foregroundColor:
@@ -109,9 +109,9 @@ class _QuestionState extends State<Question> {
                                 'false',
                                 state.questions[index].correctAnswer);
                           },
-                          child: Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: const Text(
+                          child: const Padding(
+                            padding:  EdgeInsets.all(10),
+                            child: Text(
                               "False",
                               style:
                                   TextStyle(color: Colors.black, fontSize: 30),
